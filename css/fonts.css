@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+
+h1, h2, h3, h4, h5, h6, p, a {
+  font-family: 'Ubuntu Mono', monospace;
+  color: white;
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 960px) {}
