@@ -2,11 +2,29 @@
 
   window._app = {
     init: () => {
-      console.log(__.select('.wrapper'));
-      console.log(__.select('.wrapper', true));
       __.EVENTS.enableDelegationEvents('fnclick', 'fnenter', _app.handlers);
+      window.onhashchange = e => {
+        let el = __.query('[href="' + location.hash + '"]');
+        if (el) {
+          el.click();
+        }
+      };
+      window.onhashchange();
+    },
+    common: {
+      clearSelected: () => {
+        let el = __.query('.current');
+        if (el) {
+          el.classList.remove('current');
+        }
+      },
+      selectItem: el => {
+        _app.common.clearSelected();
+        el.classList.add('current');
+      }
     },
     handlers: {
+      select: e => _app.common.selectItem(e.target),
       test: e => {
         console.log('test');
       },

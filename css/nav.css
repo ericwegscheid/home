@@ -2,6 +2,42 @@ nav {
   position: fixed;
   left: 0;
   top: 0;
+  width: 100%;
+  background-color: var(--color-primary);
+  z-index: 2;
+}
+
+ul {
+  display: flex;
+}
+
+li {
+  display: inline-flex;
+}
+
+li a {
+  --height: calc(var(--nav-height) / 1.5);
+  height: var(--height);
+  line-height: var(--height);
+  padding: calc(var(--height) / 4) 30px;
+  background-color: var(--color-primary);
+  color: var(--color-light);
+}
+
+li a:hover,
+li a.current {
+  /* filter: brightness(110%); */
+  background-color: var(--color-secondary);
+  color: var(--color-dark);
+}
+
+section {
+  /* should match outer height of nav */
+  padding-top: var(--nav-height);
+  /*
+  min-height: calc(100% - var(--nav-height));
+  */
+  z-index: 1;
 }
 
 @media only screen and (max-width: 960px) {}
