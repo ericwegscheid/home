@@ -47,6 +47,7 @@ i.fa {
   font-size: 1.5em;
   width: var(--nav-height);
   height: var(--nav-height);
+  cursor: pointer;
 }
 
 /* 

@@ -27,6 +27,7 @@ li a {
   padding: calc(var(--height) / 4) 30px;
   background-color: var(--color-primary);
   color: var(--color-light);
+  transition: background-color 0.2s, color 0.2s;
 }
 
 li a:hover,
@@ -49,6 +50,17 @@ section {
   nav {
     width: var(--nav-height);
     height: var(--nav-height);
+  }
+
+  nav > i {
+    background-color: var(--color-primary);
+    color: var(--color-light);
+    transition: background-color 0.2s, color 0.2s;
+  }
+
+  nav > i:hover {
+    background-color: var(--color-secondary);
+    color: var(--color-dark);
   }
 
   nav > i.current {
