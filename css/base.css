@@ -40,6 +40,15 @@ div.block {
   background: #000000cc;
 }
 
+i.fa {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  width: var(--nav-height);
+  height: var(--nav-height);
+}
+
 /* 
 footer must be at least as tall as last anchor section minus window height 
 there also the option of each section always being the full height

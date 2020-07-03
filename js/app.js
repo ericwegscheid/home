@@ -25,10 +25,8 @@
     },
     handlers: {
       select: e => _app.common.selectItem(e.target),
+      deselect: e => _app.common.clearSelected(),
       test: e => {
-        console.log('test');
-      },
-      otherTest: e => {
         console.log('other test');
       }
     }

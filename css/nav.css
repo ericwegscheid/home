@@ -7,8 +7,13 @@ nav {
   z-index: 2;
 }
 
+nav .fa {
+  display: none;
+}
+
 ul {
   display: flex;
+  background-color: var(--color-primary);
 }
 
 li {
@@ -40,4 +45,57 @@ section {
   z-index: 1;
 }
 
-@media only screen and (max-width: 960px) {}
+@media all and (max-width: 1024px) {
+  nav {
+    width: var(--nav-height);
+    height: var(--nav-height);
+  }
+
+  nav > i.current {
+    display: none;
+  }
+
+  nav > .fa-bars,
+  nav > i.current + ul,
+  nav > i.current + ul + i {
+    display: flex;
+  }
+
+  nav > .fa-times {
+    position: fixed;
+    top: 0;
+    right: 0;
+  }
+
+  nav > ul {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0;
+    top: -100%;
+    transition: top 0.2s ease-out, opacity 0.5s;
+  }
+
+  nav > i.current + ul {
+    top: 0;
+    opacity: 1;
+  }
+
+  nav > ul > li {
+    zoom: 2;
+  }
+
+  nav > ul > li,
+  nav > ul > li > a {
+    width: 100%;
+  }
+
+  nav > ul > li > a {
+    width: 100%;
+    padding: calc(var(--height) / 4) 0;
+    text-align: center;
+  }
+
+}

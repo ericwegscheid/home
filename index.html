@@ -11,22 +11,26 @@
 </head>
 <body>
     <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
+      <!-- open menu -->
+      <i class="fa fa-bars" aria-hidden="true" fnclick="select"></i>
+      <ul fnclick="deselect">
+        <li><a href="#home" fnclick="select">Home</a></li>
+        <li><a href="#about" fnclick="select">About</a></li>
+        <li><a href="#contact" fnclick="select">Contact</a></li>
       </ul>
+      <!-- close menu -->
+      <i class="fa fa-times" aria-hidden="true" fnclick="select"></i>
     </nav>
-    <section id="home" style="width:100%; height:1000px;" class="bg-image-primary light bg-pos-tc">
+    <section id="home" style="height:1000px;" class="bg-image-primary light bg-pos-tc">
       <h2>Home</h2>
     </section>
-    <section id="about" style="width:100%; height:500px; background: #998;">
+    <section id="about" style="height:500px; background: #998;">
       <h2>About</h2>
     </section>
-    <section id="contact" style="width:100%; height:200px;" class="bg-image-secondary light bg-pos-bc">
+    <section id="contact" style="height:200px;" class="bg-image-secondary light bg-pos-bc">
       <h2>Contact</h2>
     </section>
-    <section id="footer" style="width:100%; height:900px; background: #899;">
+    <section id="footer" style="height:900px; background: #899;">
       <h2>Footer</h2>
     </section>
   </div>
