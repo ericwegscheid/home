@@ -1,0 +1,159 @@
+body {
+	background: url(images/bg.jpg) no-repeat;
+	background-color: #000;
+	font-family:arial;
+	font-weight:bold;
+	color: #ee2;
+	font-size:16pt;
+}
+
+#battleField {
+	background:url(images/battleField.jpg);
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	width: 400px;
+	height: 300px;/*
+	border: 4px solid #CCC;
+	background-color: #F3F3F3;*/
+	z-index: 1;
+}
+#tank{
+	background: url(images/tank.png);
+	position: absolute;
+	width: 51px;
+	height: 36px;
+/*	background-color: #777; */
+	z-index: 2;
+}
+#tank2{
+	background: url(images/tank2.png);
+	position: absolute;
+	width: 51px;
+	height: 36px;
+/*	background-color: #777; */
+	z-index: 2;
+}
+#bullet, #bullet2, #bullet3, #bullet4, #bullet5, #bullet6, #bullet7 {
+	background: url(images/bullet.png);
+	position: absolute;
+	width: 25px;
+	height: 5px;
+	z-index: 2;
+	display: none;
+}
+#t2bullet, #t2bullet2, #t2bullet3, #t2bullet4, #bullet5, #bullet6, #bullet7 {
+	background: url(images/t2bullet.png);
+	position: absolute;
+	width: 25px;
+	height: 5px;
+	z-index: 2;
+	display: none;
+}
+#round, #round2, #round3, #round4, #round5, #round6, #round7 {
+	background: url(images/round.png);
+	position: absolute;
+	width: 22px;
+	height: 8px;
+	z-index: 2;
+	/*display: none;*/
+}
+#t2round, #t2round2, #t2round3, #t2round4, #t2round5, #t2round6, #t2round7  {
+	background: url(images/t2round.png);
+	position: absolute;
+	width: 22px;
+	height: 8px;
+	z-index: 2;
+	/*display: none;*/
+}
+#computerScore {
+	position: absolute;
+	left:28px;
+	top:328px;
+	width: 22px;
+	height: 8px;
+	font-size:20pt;
+	z-index: 4;
+}
+#player1Score {
+	position: absolute;
+	left:402px;
+	top:328px;
+	width: 22px;
+	height: 8px;
+	font-size:20pt;
+	z-index: 4;
+}
+#reload {
+	position: absolute;
+	background: url(images/transBG.png);
+	padding: 10px 20px 10px 20px;
+	top: 228px;
+	left: 110px;
+	z-index:9;
+	display: none;
+}
+#start {
+	position: absolute;
+	background: url(images/transBG.png);
+	padding: 10px 20px 10px 20px;
+	top: 348px;
+	left: 65px;
+	z-index:9;
+}
+#newGame {
+	position: absolute;
+	background: url(images/transBG.png);
+	padding: 10px 20px 10px 20px;
+	top: 190px;
+	left: 65px;
+	font-size:14pt;
+	z-index:9;
+	display: none;
+}
+#youLose {
+	position: absolute;
+	background: url(images/transBG.png);
+	padding: 10px 20px 10px 20px;
+	top: 140px;
+	left: 120px;
+	z-index:9;
+	display: none;
+}
+#youWin {
+	position: absolute;
+	background: url(images/transBG.png);
+	padding: 10px 20px 10px 20px;
+	top: 140px;
+	left: 115px;
+	z-index:9;
+	display: none;
+}
+#controls {
+	position: absolute;
+	font-size:10pt;
+	top: 24px;
+	left: 475px;
+	z-index: 4;
+}
+#boom {
+	position: absolute;
+	top: -500px;
+	left: -500px;
+	width: 150px;
+	height: 113px;
+	z-index: 4;
+	display:none;
+}
+#boom2 {
+	position: absolute;
+	top: -500px;
+	left: -500px;
+	width: 150px;
+	height: 113px;
+	z-index: 4;
+	display:none;
+}
+.load {
+	display: none;
+}

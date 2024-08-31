@@ -1,0 +1,15 @@
+73x 53y //center of explostion
+
+28x 17y //center of tank for explostion (tank2)
+
+22x 17y //center of tank for explostion (tank)
+
+
+roundLeft top to bottom
+
+28x and 272, 285, 298, 311
+
+roundRight top to bottom
+
+295x and 272, '''''''
+
